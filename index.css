@@ -1,17 +1,72 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     background-color:#40407a;
-    color:#ecf0f1;
+    color:white;
     font-family: 'Roboto', sans-serif;
 }
 
- h1 {
-    font-size: 70px;
+ .js-clock > h1 {
+    font-size: 90px;
     padding:0; margin:0;
 }
 
+.js-weather {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.wrap {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.align-center {
+    display: flex;
+    justify-content: center;
+}
+
 .greeting, .form {
-    font-size: 50px;
+    font-size: 60px;
     display: none;
+    text-align: center;
+}
+
+.js-toDoForm {
+    margin-top: 20px;
+}
+
+.js-toDoForm > input {
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
+
+.js-toDoForm > input:focus {
+    outline: none;
+}
+
+.js-toDoForm > input::placeholder{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
+
+.js-toDoList {
+    margin-top: 20px;
+}
+
+.js-toDoList > li {
+    display: flex;
+    justify-content: center;
 }
 
 .showing {
@@ -35,6 +90,11 @@ body{
     height: 100%;
     z-index: -1;
     animation: fadeIn 1s linear;
+}
+
+.transparent-button {
+    background-color: transparent;
+    border: none;
 }
 
 

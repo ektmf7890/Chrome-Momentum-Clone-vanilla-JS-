@@ -1,6 +1,14 @@
-let a = 221;
-let b = a-1.5;
+const title = document.querySelector("#title");
 
-a = 4;
+const CLICKED_CLASS = "clicked";
 
-console.log(b, a);
+function handleClick(){
+    title.classList.toggle(CLICKED_CLASS)
+}
+
+function init(){
+    title.addEventListener("click", handleClick);
+}
+init();
+
+console.dir(title)
